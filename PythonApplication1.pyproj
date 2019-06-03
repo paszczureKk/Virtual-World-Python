@@ -1,0 +1,138 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>0f938ae3-45d2-445c-b9b4-2e90cc953d6f</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>VirtualWorld.py</StartupFile>
+    <SearchPath>General;General\Engine;General\Entities;General\Entities\Abstract;General\Entities\Common;General\Entities\Unique;General\Navigation;General\Resources;General\Utilities;General\Entities\Common\Animals;General\Entities\Common\Plants</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="General\Directions\__init__.py" />
+    <Compile Include="General\Engine\Board.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Engine\ImageLoader.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Engine\InputEnum.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Engine\Layout.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Engine\PopUpMenu.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Engine\pygame_textinput.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Engine\__init__.py" />
+    <Compile Include="General\Entities\Abstract\Animal.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Abstract\Entities.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Abstract\Organism.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Abstract\Plant.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Abstract\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Animals\Antelope.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Animals\CyberSheep.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Animals\Fox.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Animals\Sheep.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Animals\Turtle.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Animals\Wolf.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Animals\__init__.py" />
+    <Compile Include="General\Entities\Common\Plants\Belladonna.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Plants\Dandelion.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Plants\Grass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Plants\Guarana.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Plants\HeracleumSosnowskyi.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Common\Plants\__init__.py" />
+    <Compile Include="General\Entities\Unique\Human.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Entities\Unique\__init__.py" />
+    <Compile Include="General\Directions\Point.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Directions\Navigation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Directions\WorldDirections.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Uti\Utilities.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\Uti\__init__.py" />
+    <Compile Include="General\World.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="General\__init__.py" />
+    <Compile Include="VirtualWorld.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="General\" />
+    <Folder Include="General\Entities\Abstract\" />
+    <Folder Include="General\Entities\Common\" />
+    <Folder Include="General\Entities\Common\Animals\" />
+    <Folder Include="General\Entities\Common\Plants\" />
+    <Folder Include="General\Entities\Unique\" />
+    <Folder Include="General\Directions\" />
+    <Folder Include="General\Entities\" />
+    <Folder Include="General\Engine\" />
+    <Folder Include="General\Resources\" />
+    <Folder Include="General\Uti\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
